@@ -14,48 +14,6 @@ A full-stack web application for managing team tasks and projects with role-base
 
 ---
 
-## Folder Structure
-
-```
-team-task-manager/
-├── backend/
-│   ├── middleware/
-│   │   └── auth.js          # JWT protect + adminOnly middleware
-│   ├── models/
-│   │   ├── User.js
-│   │   ├── Project.js
-│   │   └── Task.js
-│   ├── routes/
-│   │   ├── auth.js          # POST /api/auth/signup, /login
-│   │   ├── projects.js      # GET, POST, DELETE /api/projects
-│   │   ├── tasks.js         # GET, POST, PATCH, DELETE /api/tasks
-│   │   ├── dashboard.js     # GET /api/dashboard
-│   │   └── users.js         # GET /api/users, /me
-│   ├── .env.example
-│   ├── package.json
-│   └── server.js
-│
-└── frontend/
-    ├── public/
-    │   └── index.html
-    ├── src/
-    │   ├── components/
-    │   │   ├── Navbar.js
-    │   │   └── Navbar.css
-    │   ├── context/
-    │   │   └── AuthContext.js
-    │   ├── pages/
-    │   │   ├── Login.js
-    │   │   ├── Signup.js
-    │   │   ├── Dashboard.js
-    │   │   ├── Projects.js
-    │   │   └── Tasks.js
-    │   ├── utils/
-    │   │   └── api.js
-    │   ├── App.js
-    │   ├── App.css
-    │   └── index.js
-    └── package.json
 ```
 
 ---
@@ -175,8 +133,8 @@ npm start     # Starts on http://localhost:3000
 ### Admin User
 ```json
 {
-  "name": "Alice Admin",
-  "email": "alice@example.com",
+  "name": "Nidhi Admin",
+  "email": "nidhi@example.com",
   "password": "password123",
   "role": "admin"
 }
@@ -185,16 +143,16 @@ npm start     # Starts on http://localhost:3000
 ### Member Users
 ```json
 {
-  "name": "Bob Builder",
-  "email": "bob@example.com",
+  "name": "vidhi",
+  "email": "vidhi@example.com",
   "password": "password123",
   "role": "member"
 }
 ```
 ```json
 {
-  "name": "Carol Coder",
-  "email": "carol@example.com",
+  "name": "amit",
+  "email": "amit@example.com",
   "password": "password123",
   "role": "member"
 }
@@ -208,10 +166,10 @@ npm start     # Starts on http://localhost:3000
 ### Sample Tasks
 | Title                  | Project            | Assigned To | Status      |
 |------------------------|--------------------|-------------|-------------|
-| Design homepage mockup | Website Redesign   | Bob         | In Progress |
-| Write landing copy     | Website Redesign   | Carol       | Pending     |
-| Set up CI/CD pipeline  | Mobile App Launch  | Bob         | Done        |
-| Create ad creatives    | Q3 Marketing       | Carol       | Pending     |
+| Design homepage mockup | Website Redesign   | vidhi       | In Progress |
+| Write landing copy     | Website Redesign   | amit        | Pending     |
+| Set up CI/CD pipeline  | Mobile App Launch  | vidhi       | Done        |
+| Create ad creatives    | Q3 Marketing       | amit        | Pending     |
 
 ---
 
@@ -230,7 +188,3 @@ REACT_APP_API_URL=https://your-backend-url.up.railway.app/api
 ```
 
 ---
-
-## License
-
-MIT — free to use and modify.
