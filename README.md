@@ -91,42 +91,6 @@ npm start     # Starts on http://localhost:3000
 
 ---
 
-## Deploying on Railway
-
-### Step 1 — Prepare
-
-1. Push your code to a GitHub repository (backend and frontend as separate folders)
-2. Sign up at [railway.app](https://railway.app)
-
-### Step 2 — Deploy Backend
-
-1. Click **New Project** → **Deploy from GitHub repo**
-2. Select your repository, set the **Root Directory** to `backend`
-3. Railway auto-detects Node.js and runs `npm start`
-4. Go to **Variables** and add:
-   - `MONGO_URI` → your MongoDB Atlas connection string
-   - `JWT_SECRET` → a long random string (e.g. `openssl rand -hex 32`)
-   - `PORT` → `5000`
-5. Go to **Settings → Networking** → click **Generate Domain**
-6. Copy the backend URL (e.g. `https://your-app.up.railway.app`)
-
-### Step 3 — Deploy Frontend
-
-1. Click **New Service** in the same project → **GitHub Repo**
-2. Set **Root Directory** to `frontend`
-3. Go to **Variables** and add:
-   - `REACT_APP_API_URL` → `https://your-backend-url.up.railway.app/api`
-4. Railway will run `npm run build` and serve the static files
-5. Generate a domain for the frontend too
-
-### Step 4 — MongoDB Atlas (Free)
-
-1. Go to [cloud.mongodb.com](https://cloud.mongodb.com)
-2. Create a free M0 cluster
-3. Create a DB user and whitelist `0.0.0.0/0` for Railway IPs
-4. Copy the connection string and use it as `MONGO_URI`
-
----
 
 ## Sample Test Data
 
