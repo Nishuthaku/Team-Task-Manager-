@@ -8,7 +8,7 @@ A full-stack web application for managing team tasks and projects with role-base
 |-----------|------------------------|
 | Frontend  | React, React Router    |
 | Backend   | Node.js, Express       |
-| Database  | MongoDB (Mongoose)     |
+| Database  | MongoDB (Mongoose)     | 
 | Auth      | JWT (JSON Web Tokens)  |
 | HTTP      | Axios (REST APIs)      |
 
